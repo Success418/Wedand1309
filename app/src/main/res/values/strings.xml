@@ -1,0 +1,257 @@
+﻿<resources>
+    <string name="app_name">WedWise</string>
+
+    <string name="facebook_app_id">---fbid---</string>
+    <string name="fb_login_protocol_scheme">fb---fbid---</string>
+    <!--<string name="admob_publiserID">ca-app-pub-4218354118806397~7122245736</string>-->
+    <!--<string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--<string name="admob_bannerID">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="logindesc">Enter a phone number that can be used to verify your identity with a text message or phone call. </string>
+    <string name="hintphone">your phone number </string>
+    <string name="hintusername">Username </string>
+    <string name="hintfullname">Full Name </string>
+    <string name="hintpassword">Password </string>
+    <string name="orlogin">Or Login With</string>
+    <string name="orregister">"Don't" have an account?</string>
+
+    <string name="verifydesc">We send you a code to verify your phone number</string>
+    <string name="norecieve">Didn\'t receive  code!</string>
+    <string name="resend">Resend</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    <string name="close">Are your sure you want to close</string>
+
+    <string name="subject">subject</string>
+    <string name="email_text">text</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_chat">Chat</string>
+    <string name="my_chats">My Chats</string>
+    <string name="menu_Registerasvendor">Register as vendor</string>
+    <string name="menu_favourite">My Bookmarks</string>
+    <string name="menu_property">Property</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="device">android</string>
+
+    <string-array name="purpose">
+        <item>Sale</item>
+        <item>Rent</item>
+    </string-array>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="venue_detail">Venue Detail</string>
+    <string name="liveChat">Live Chat</string>
+    <string name="send_message">Send Email</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="call">Call</string>
+    <string name="bookAppointment">Request Appointment</string>
+    <string name="write_review">Write Review</string>
+    <string name="operating_hours">Operating Hours :</string>
+    <string name="menu_vendor">Find Vendors Near Me</string>
+    <string name="menu_category">Find Vendor By Category</string>
+    <string name="menu_checklist">Checklist</string>
+    <string name="menu_guestList">Guest List</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_logout">Logout</string>
+    <string name="signup">SIGNUP</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="register_now">Register Now</string>
+
+    <string name="copyright">© PlanningNote.com</string>
+    <string name="menu_label">Menu</string>
+    <string name="menu_checklist1">"Wedding Checklist"</string>
+    <string name="menu_guestlist">"Guest List
+(RSVP's)"</string>
+    <string name="menu_todos">To-Dos</string>
+    <string name="menu_budget">Budget Plan</string>
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_vendor1">Vendors</string>
+    <!--<string name="menu_help">USER GUIDE (FAQ)</string>-->
+    <string name="dashboard_label">Dashboard</string>
+    <string name="dashboard_budgets">Budget</string>
+    <string name="dashboard_schedules">Schedule</string>
+    <string name="dashboard_vendors">Vendors</string>
+    <string name="title_dashboard_budgets">Dashboard: Budget</string>
+    <string name="title_dashboard_schedules">Dashboard: Schedule</string>
+    <string name="title_dashboard_vendors">Dashboard: Vendors</string>
+    <string name="title_timeline">To-Dos (Timeline)</string>
+    <string name="title_topic">Wedding Checklist</string>
+    <string name="title_budget">Budget Plan</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_vendor">Vendors</string>
+    <string name="title_guestlist">"Guest List (RSVP's)"</string>
+    <string name="title_help">USER GUIDE (FAQ)</string>
+    <string name="tab_task">To-Dos</string>
+    <string name="tab_checklist">Checklist</string>
+    <string name="tab_budget">Budget</string>
+    <string name="tab_schedule">Schedule</string>
+    <string name="tab_vendor">Vendors</string>
+    <string name="btn_move">></string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_add">+ New</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_date">Select Date</string>
+    <string name="btn_addinfo">Set Wedding Date</string>
+    <string name="btn_phone">Phone</string>
+    <string name="btn_email">Email</string>
+    <string name="btn_website">Website</string>
+    <string name="btn_map">Map</string>
+    <string name="btn_new_topic">+ New Category</string>
+    <string name="btn_new_task">+ New To-Do</string>
+    <string name="btn_new_checklist">+ New Checklist</string>
+    <string name="btn_new_budget">+ New Budget</string>
+    <string name="btn_new_schedule">+ New Schedule</string>
+    <string name="btn_new_vendor">+ New Vendor</string>
+    <string name="btn_new_guest">+ New Guest</string>
+    <string name="orderby_label">sort by</string>
+    <string name="orderby_title">Sort by A-Z</string>
+    <string name="orderby_date">Sort by Date</string>
+    <string name="orderby_status">Sort by Check</string>
+    <string name="filter_all">All Lists</string>
+    <string name="filter_todo">Things to do</string>
+    <string name="filter_done">Things done</string>
+    <string name="filter_fromthisday">Upcoming</string>
+    <string name="filter_beforetoday">Past</string>
+    <string name="label_year">Year</string>
+    <string name="label_month">Month</string>
+    <string name="label_date">Date</string>
+    <string name="label_budgeted">Budgeted Amount</string>
+    <string name="label_vendor">Vendor Estimate</string>
+    <string name="label_spent">Amount Spent</string>
+    <string name="label_total_sum_budgeted">"Total
+Budgeted
+Amount"</string>
+    <string name="label_total_sum_vendor">"Total
+Vendor
+Estimate"</string>
+    <string name="label_total_sum_spent">"Total
+Amount
+Spent"</string>
+    <string name="label_sum_budgeted">"Budgeted
+Amount"</string>
+    <string name="label_sum_vendor">"Vendor
+Estimate"</string>
+    <string name="label_sum_spent">"Amount
+Spent"</string>
+    <string name="label_guestname">Guest Name</string>
+    <string name="label_side">Side</string>
+    <string name="label_side_bride">Bride</string>
+    <string name="label_side_groom">Groom</string>
+    <string name="label_side_child">Child</string>
+    <string name="label_rsvp">RSVP</string>
+    <string name="label_invitessent">Invites Sent</string>
+    <string name="label_attending">Attending</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="label_undecided">Undecided</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_note">Note</string>
+    <string name="hint_year">0000</string>
+    <string name="hint_month">00</string>
+    <string name="hint_date">00</string>
+    <string name="hint_budget">0</string>
+    <string name="hint_vendorname">Vendor Name</string>
+    <string name="hint_contactname">Contact Name</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_website">Website</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_middlename">Middle Name</string>
+    <string name="hint_lastname">Last Name</string>
+
+    <string name="hintname">Name</string>
+    <string name="hint_Surname">Surname</string>
+    <string name="hint_Email">*Email</string>
+    <string name="hint_Mobile">Mobile</string>
+    <string name="hint_CompanyName">Company name</string>
+    <string name="hint_Displayname">Display name</string>
+
+    <string name="msg_added">Added</string>
+    <string name="msg_edited">Edited</string>
+    <string name="err_text">Enter Text</string>
+    <string name="err_content">Enter Content</string>
+    <string name="err_title">Enter Title</string>
+    <string name="err_note">Enter Note</string>
+    <string name="err_dateformat">Check Date Format</string>
+    <string name="err_invailddate">Invalid Date</string>
+    <string name="err_guestname">Enter Guest Name</string>
+    <string name="err_side">Select Side</string>
+    <string name="err_vendorname">Enter Vendor Name</string>
+    <string name="err_names">"Enter Bride's Name and Groom's Name"</string>
+    <string name="err_urlformat">Check URL Format (http://…)</string>
+    <string name="confirm_delete_topic">All items of this category will be deleted permanently. Are you sure to delete?</string>
+    <string name="confirm_delete_item">Are you sure to delete?</string>
+    <string name="help_tasks">[Tip] Long click a list item to edit or delete.</string>
+    <string name="help_items">[Tip] Long click a list item to edit or delete.</string>
+    <string name="help_budgets">[Tip] Long click a list item to edit or delete.</string>
+    <string name="help_schedules">[Tip] Long click a list item to edit or delete.</string>
+    <string name="help_vendors">"[Tip] Click a list item to call, mail, visit website or view map.
+[Tip] Long click a list item to edit or delete."</string>
+    <string name="help_guests">[Tip] Long click a list item to edit or delete.</string>
+    <string name="help_title_item_manage">How do I edit or delete a list item?</string>
+    <string name="help_desc_item_manage">Long click a list item to edit or delete. This function is available on any pages that have [+ New] Button.</string>
+    <string name="help_title_dashboard_use">What is a \"Dashboard\"?</string>
+    <string name="help_desc_dashboard_use">Budgets, schedules and vendors added to \"Wedding Checklist\" are shown on \"Dashboard\" pages.</string>
+    <string name="help_title_info_manage">"How do I change my 'Wedding Day' on \"Dashboard: Schedule\" page?"</string>
+    <string name="help_desc_info_manage">Tap on the wedding date, and an edit dialogue will show up.</string>
+    <string name="help_title_vendors_actions">How do I use enhanced functions on \"Vendors\" page?</string>
+    <string name="help_desc_vendors_actions">"Tap on each vendor, and you will be able to make a call to the vendor, mail to vendor, open vendor's website and view map of the address inserted."</string>
+    <string name="line_shade">-------</string>
+    <string name="dummy">Text</string>
+    <string name="hint_info_groom">"Groom's Name"</string>
+    <string name="hint_info_bride">"Bride's Name"</string>
+    <string name="label_info_groom">Groom</string>
+    <string name="label_info_bride">Bride</string>
+    <string name="label_info_date">Wedding Date</string>
+    <string name="btn_register">register</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Notification Setting</string>
+    <string name="attachment_summary_on">Notification will be enable for this device</string>
+    <string name="attachment_summary_off">Notification will be disable for this device</string>
+    <string name="new_vendor_message">Yay! You’re on your way to creating a New Vendor listing on the South Africas biggest wedding app. \n \n Simply fill out the below information. \n \n After our approval you’ll have access to WedWise and you start interacting with the newly engaged!</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_your_surname">Please enter your surname</string>
+    <string name="please_enter_your_email">Please enter your email address</string>
+    <string name="please_enter_your_phone">Please enter your phone no</string>
+    <string name="registration_success">Registartion Successful</string>
+    <string name="vendor_registration_message">You are successfully registered as a vendor</string>
+
+</resources>

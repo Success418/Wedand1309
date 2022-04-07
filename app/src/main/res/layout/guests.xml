@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SubPage"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_pagetitle">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/listTitle"
+            style="@style/PageTitle"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_guestlist" />
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_filter_results_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/statGuests"
+        style="@style/GuestsStat"
+        android:text="@string/dummy" />
+
+    <LinearLayout style="@style/GuestsListLabels">
+
+        <TextView
+            android:id="@+id/labelGuestsName"
+            style="@style/GuestsLabelName"
+            android:text="@string/label_guestname" />
+
+        <TextView
+            style="@style/GuestsLabelSide"
+            android:text="@string/label_side" />
+
+        <TextView
+            android:id="@+id/labelInvitessent"
+            style="@style/GuestsLabelInvites"
+            android:text="@string/label_invitessent" />
+
+        <TextView
+            android:id="@+id/labelAttending"
+            style="@style/GuestsLabelAttending"
+            android:text="@string/label_attending" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listGuests"
+        style="@style/ListViewWeight" />
+
+    <LinearLayout style="@style/Toolbar">
+
+        <Button
+            style="@style/ButtonAdd"
+            android:onClick="openNewGuestDialog"
+            android:text="@string/btn_new_guest" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/help"
+        style="@style/PageHelp"
+        android:text="@string/help_guests" />
+</LinearLayout>

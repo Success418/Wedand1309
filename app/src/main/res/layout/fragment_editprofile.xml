@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editprofile"
+    android:background="@color/white"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="co.za.wedwise.Fragment.EditProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        app:contentInsetLeft="0dp"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_white">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:layout_marginLeft="10dp"/>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Edit Profile"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar">
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white"
+       android:orientation="vertical">
+
+       <com.wonshinhyo.dragrecyclerview.DragRecyclerView
+           android:id="@+id/listphoto"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp"
+           android:paddingTop="5dp"
+           android:elevation="1dp"
+           android:background="@color/white">
+
+       </com.wonshinhyo.dragrecyclerview.DragRecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:tint="@color/black"/>
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/firstname"
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="match_parent"
+                android:hint="@string/hintfullname"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="5dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@color/transparentt"
+                />
+            <!--<customfonts.EditTextSFProDisplayRegular-->
+                <!--android:id="@+id/firstname"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/round_edittext_background"-->
+                <!--android:hint="Full Name"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textColorHint="@color/gray"/>-->
+        </LinearLayout>
+
+    <customfonts.Button_SF_Pro_Display_Medium
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_round_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Submit"/>
+
+
+   </LinearLayout>
+
+</ScrollView>
+
+
+    </RelativeLayout>
+</FrameLayout>

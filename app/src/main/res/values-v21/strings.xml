@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="venue_detail">Venue Detail</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="call">Call</string>
+    <string name="write_review">Write Review</string>
+    <string name="operating_hours">Operating Hours :</string>
+    <string name="menu_category">Find Vendor By Category</string>
+    <string name="menu_checklist">Checklist</string>
+    <string name="menu_guestList">Guest List</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="register_now">Register Now</string>
+    <string name="btn_register">register</string>
+</resources>

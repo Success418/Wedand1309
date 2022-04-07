@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/DashboardPageTitle">
+        <TextView android:id="@+id/listTitle" android:text="@string/title_dashboard_vendors" style="@style/DashboardTitle" />
+        <Button android:text="@string/btn_refresh" android:onClick="refreshList" style="@style/ButtonRefresh" />
+    </RelativeLayout>
+    <ListView android:id="@+id/listVendors" style="@style/ListViewWeight" />
+    <LinearLayout style="@style/Toolbar" />
+    <TextView android:id="@+id/help" android:text="@string/help_vendors" style="@style/PageHelp" />
+</LinearLayout>

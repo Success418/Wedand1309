@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ListItemWeightV">
+        <TextView android:id="@+id/topictitle" android:text="@string/dummy" style="@style/ListItemTopicTitle" />
+        <TextView android:id="@+id/title" android:text="@string/dummy" style="@style/ListItemVendor" />
+        <TextView android:id="@+id/contact" android:text="@string/dummy" style="@style/ListItemDesc" />
+        <TextView android:id="@+id/note" android:text="@string/dummy" style="@style/ListItemNote" />
+    </LinearLayout>
+    <LinearLayout style="@style/ListItemContactInfo">
+        <TextView android:id="@+id/phone" android:text="@string/dummy" style="@style/ListItemVendorContact" />
+        <TextView android:id="@+id/email" android:text="@string/dummy" style="@style/ListItemVendorContact" />
+        <TextView android:id="@+id/website" android:text="@string/dummy" style="@style/ListItemVendorContact" />
+        <TextView android:id="@+id/address" android:text="@string/dummy" style="@style/ListItemVendorContact" />
+    </LinearLayout>
+    <TextView android:id="@+id/buttonMove" android:text="@string/btn_move" style="@style/ListItemButtonMove" />
+</LinearLayout>

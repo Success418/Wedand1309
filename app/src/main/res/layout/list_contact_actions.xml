@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/FormPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/selctedItem" android:text="@string/dummy" style="@style/FormText" />
+    <LinearLayout style="@style/FormButtons">
+        <Button android:id="@+id/telBtn" android:text="@string/btn_phone" style="@style/FormButton" />
+        <Button android:id="@+id/emailBtn" android:text="@string/btn_email" style="@style/FormButton" />
+        <Button android:id="@+id/websiteBtn" android:text="@string/btn_website" style="@style/FormButton" />
+        <Button android:id="@+id/mapBtn" android:text="@string/btn_map" style="@style/FormButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <customfonts.TextViewSFProDisplayMedium
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/darkgray"
+        android:visibility="gone"
+        android:background="@drawable/round_edittext_background"/>
+
+ <customfonts.TextViewSFProDisplayRegular
+     android:id="@+id/msgtxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="15dp"
+     android:textSize="15dp"
+    android:background="@drawable/background_my_chat"
+    android:textColor="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+     android:paddingTop="10dp"
+     android:paddingBottom="10dp"
+     android:textAlignment="textStart"
+     android:layout_marginLeft="40dp"
+    android:gravity="center_vertical"
+    android:layout_below="@+id/datetxt"
+    android:layout_marginTop="5dp"
+    android:text="Your message"
+     tools:ignore="RtlCompat" />
+    <customfonts.TextViewSFProDisplayMedium
+        android:id="@+id/messageseen"
+        android:layout_below="@+id/msgtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/darkgray"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

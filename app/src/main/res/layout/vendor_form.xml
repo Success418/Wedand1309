@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newScheduleLayout"
+    style="@style/FormPage">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        style="@style/FormTitle"
+        android:hint="@string/hint_vendorname" />
+
+    <EditText
+        android:id="@+id/noteEditText"
+        style="@style/FormNote"
+        android:hint="@string/hint_note" />
+
+    <EditText
+        android:id="@+id/contactEditText"
+        style="@style/FormContactName"
+        android:hint="@string/hint_contactname" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        style="@style/FormPhone"
+        android:hint="@string/hint_phone" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/FormEmail"
+        android:hint="@string/hint_email" />
+
+    <EditText
+        android:id="@+id/websiteEditText"
+        style="@style/FormWebsite"
+        android:hint="@string/hint_website" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        style="@style/FormAddress"
+        android:hint="@string/hint_address" />
+
+    <LinearLayout style="@style/FormButtons">
+
+        <Button
+            android:id="@+id/formOKBtn"
+            style="@style/FormButton"
+            android:text="@string/btn_ok" />
+
+        <Button
+            android:id="@+id/formCloseBtn"
+            style="@style/FormButton"
+            android:text="@string/btn_cancel" />
+    </LinearLayout>
+</LinearLayout>

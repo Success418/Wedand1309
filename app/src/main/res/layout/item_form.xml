@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/newItemLayout" style="@style/FormPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@+id/titleEditText" android:hint="@string/hint_title" style="@style/FormTitle" />
+    <EditText android:id="@+id/noteEditText" android:hint="@string/hint_note" style="@style/FormNote" />
+    <LinearLayout style="@style/FormButtons">
+        <Button android:id="@+id/formOKBtn" android:text="@string/btn_ok" style="@style/FormButton" />
+        <Button android:id="@+id/formCloseBtn" android:text="@string/btn_cancel" style="@style/FormButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Filter"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/bt_close"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cancel"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_property"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Type"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <customfonts.Button_SF_Pro_Display_Medium
+                        android:id="@+id/bt_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rect"
+                        android:text="SALE"
+                        android:textColor="@android:color/white" />
+
+                    <customfonts.Button_SF_Pro_Display_Medium
+                        android:id="@+id/bt_rent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rect"
+                        android:text="RENT"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_price"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Price"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.jaygoo.widget.RangeSeekBar
+                            android:id="@+id/seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:rsb_min="0"
+                            app:rsb_max="10000000"
+                            app:rsb_mode="range"
+                            app:rsb_range_interval="1000"
+                            app:rsb_progress_height="8dp"
+                            app:rsb_progress_color="@color/parentcolor"
+                            app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
+                            app:rsb_tick_mark_mode="other"
+                            app:rsb_thumb_size="25dp"
+                            app:rsb_thumb_drawable="@drawable/circle_primary"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <customfonts.TextViewSFProDisplayMedium
+                                android:id="@+id/textmin"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:textColor="@color/gray"/>
+
+                            <customfonts.TextViewSFProDisplayMedium
+                                android:id="@+id/textmax"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:gravity="right"
+                                android:textColor="@color/gray"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_filter"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Bed"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/allbed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="All"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bed1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="1"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bed2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="2"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bed3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="3"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bed4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="4"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bed5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="5"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_filter"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Bath"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/allbath"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="All"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bath1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="1"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bath2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="2"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bath3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="3"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bath4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="4"
+                            android:textColor="@android:color/white" />
+
+                        <customfonts.Button_SF_Pro_Display_Medium
+                            android:id="@+id/bath5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rect"
+                            android:text="5"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/gray"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_property"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Category"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llcategory"
+                        android:layout_below="@+id/llcity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edittext_background"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sort"
+                            android:tint="@color/gray"/>
+
+                        <Spinner
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/round_edittext_background"
+                            android:hint="Category"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_location"
+                            android:tint="@color/colorPrimary"/>
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="City"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llcity"
+                        android:layout_below="@+id/llcity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edittext_background"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sort"
+                            android:tint="@color/gray"/>
+
+                        <Spinner
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/round_edittext_background"
+                            android:hint="Category"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/gray"/>
+
+                <Button
+                    android:id="@+id/submit"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_round_1"
+                    android:elevation="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

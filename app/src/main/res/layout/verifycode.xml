@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/back_btn_verify"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_back"/>
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Verify Phone"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"/>
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/toolbar2">
+
+                <LinearLayout
+                    android:id="@+id/lltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/verifyphone"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verifydesc"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/sendtotxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="13dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/codelayout"
+                        android:orientation="horizontal">
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:maxLength="1"
+                            android:ems="1"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp"/>
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numtwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:layout_marginLeft="10dp"
+                            android:ems="1"
+                            android:maxLength="1"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp" />
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numthree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:layout_marginLeft="10dp"
+                            android:ems="1"
+                            android:maxLength="1"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp" />
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numfour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:layout_marginLeft="10dp"
+                            android:ems="1"
+                            android:textColor="@color/black"
+                            android:maxLength="1"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp" />
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numfive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:layout_marginLeft="10dp"
+                            android:ems="1"
+                            android:textColor="@color/black"
+                            android:maxLength="1"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp" />
+
+                        <customfonts.EditTextSFProDisplayMedium
+                            android:id="@+id/numsix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_edittext_background"
+                            android:layout_marginLeft="10dp"
+                            android:ems="1"
+                            android:textColor="@color/black"
+                            android:maxLength="1"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="35sp" />
+
+                    </LinearLayout>
+
+                    <customfonts.Button_SF_Pro_Display_Medium
+                        android:id="@+id/buttonconfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_round_1"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/confirm"
+                        android:textColor="@color/white"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:text="@string/norecieve"/>
+
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/parentcolor"
+                        android:textSize="18dp"
+                        android:onClick="resendCode"
+                        android:text="@string/resend"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</RelativeLayout>

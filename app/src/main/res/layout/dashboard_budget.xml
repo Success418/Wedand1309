@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ListItemWeightV">
+        <TextView android:id="@+id/topictitle" android:paddingTop="@dimen/padding_tiny" android:paddingBottom="@dimen/padding_tiny" android:text="@string/dummy" style="@style/ListItemTopicTitle" />
+        <LinearLayout style="@style/ListItemBudgets">
+            <TextView android:id="@+id/budgeted" android:text="@string/dummy" style="@style/ListItemBudget" />
+            <TextView android:id="@+id/vendor" android:text="@string/dummy" style="@style/ListItemBudget" />
+            <TextView android:id="@+id/spent" android:text="@string/dummy" style="@style/ListItemBudget" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/buttonMove" android:text="@string/btn_move" style="@style/ListItemButtonMove" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@+id/checkBox" style="@style/ListCheckBox" />
+    <LinearLayout style="@style/ListItemDdayInfo">
+        <TextView android:id="@+id/dday" android:text="@string/dummy" style="@style/ListItemDday" />
+        <TextView android:id="@+id/ddate" android:text="@string/dummy" style="@style/ListItemDdate" />
+    </LinearLayout>
+    <LinearLayout style="@style/ListItemWeightV">
+        <TextView android:id="@+id/topictitle" android:text="@string/dummy" style="@style/ListItemTopicTitle" />
+        <TextView android:id="@+id/title" android:text="@string/dummy" style="@style/ListItemTitle" />
+    </LinearLayout>
+    <TextView android:id="@+id/buttonMove" android:text="@string/btn_move" style="@style/ListItemButtonMove" />
+</LinearLayout>

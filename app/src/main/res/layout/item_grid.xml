@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardUseCompatPadding="false"
+        card_view:elevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/image"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:scaleType="fitXY" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/gradient_drawable" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/image"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <com.github.ornolfr.ratingview.RatingView
+                    android:id="@+id/ratingView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/image"
+                    card_view:drawable_empty="@drawable/ic_starempty"
+                    card_view:drawable_filled="@drawable/ic_star_filled"
+                    card_view:drawable_half="@drawable/ic_star_half"
+                    card_view:drawable_margin="2dp"
+                    card_view:drawable_size="30dp"
+                    card_view:is_indicator="true"
+                    card_view:max_count="5" />
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ratingView"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/image"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:text="1000"
+                    android:textColor="@color/gray"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_baseline_location" />
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/address"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <!--<customfonts.TextViewSFProDisplayMedium-->
+                <!--android:id="@+id/textPurpose"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:paddingEnd="10dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:textSize="12sp"-->
+                <!--android:text="Rent"-->
+                <!--android:background="@drawable/button_round_1"-->
+                <!--android:backgroundTint="@color/green"/>-->
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_call" />
+
+                <ImageView
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_height="23dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_message" />
+
+                <ImageView
+                    android:id="@+id/chat"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_chat_bubble" />
+
+                <ImageView
+                    android:id="@+id/favourite"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_favorite" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

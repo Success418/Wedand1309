@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/IntroPage">
+
+    <RelativeLayout style="@style/IntroTop">
+
+        <LinearLayout style="@style/TopLine" />
+
+        <ImageView
+            style="@style/IntroTitle"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/IntroBottom">
+
+        <LinearLayout style="@style/IntroMenus">
+
+            <LinearLayout style="@style/IntroMenuWrap">
+
+                <Button
+                    style="@style/IntroMenu"
+                    android:onClick="gotoTopics"
+                    android:text="@string/menu_checklist" />
+
+                <Button
+                    style="@style/IntroMenu"
+                    android:onClick="gotoGuests"
+                    android:text="@string/menu_guestlist" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@string/dashboard_label" />
+
+            <LinearLayout style="@style/IntroMenuWrap">
+
+                <Button
+
+                    style="@style/IntroMenuDashboard"
+                    android:onClick="gotoDashboardBudgets"
+                    android:text="@string/dashboard_budgets" />
+
+                <Button
+                    android:visibility="gone"
+                    style="@style/IntroMenuDashboard"
+                    android:onClick="gotoDashboardSchedules"
+                    android:text="@string/dashboard_schedules" />
+
+                <Button
+                    android:visibility="gone"
+                    style="@style/IntroMenuDashboard"
+                    android:onClick="gotoDashboardVendors"
+                    android:text="@string/dashboard_vendors" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/IntroMenuWrap">
+
+                <Button
+                    style="@style/IntroMenuHelp"
+                    android:onClick="gotoHelp"
+                    android:text="@string/menu_help" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            style="@style/IntroCopyright"
+            android:text="@string/copyright"
+            android:textColor="@color/copyright" />
+    </RelativeLayout>
+</LinearLayout>

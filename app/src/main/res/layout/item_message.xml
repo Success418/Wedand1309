@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/mainlayout"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimages"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_placeholder"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userimages"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp" />
+                <customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/datetxt"
+                    android:textSize="12sp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:text="1 January"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Message"
+                android:textSize="13dp"
+                android:maxLines="2"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/listTitle" android:text="@string/title_budget" style="@style/TopicTitle" />
+    <LinearLayout style="@style/ListTabs">
+        <Button android:text="@string/tab_task" android:onClick="gotoTasks" style="@style/ListTab" />
+        <Button android:text="@string/tab_checklist" android:onClick="gotoItems" style="@style/ListTab" />
+        <Button android:text="@string/tab_budget" style="@style/ListTabOn" />
+        <Button android:text="@string/tab_schedule" android:onClick="gotoSchedules" style="@style/ListTab" />
+        <Button android:text="@string/tab_vendor" android:onClick="gotoVendors" style="@style/ListTab" />
+    </LinearLayout>
+    <LinearLayout style="@style/BudgetSum">
+        <TextView android:text="@string/label_sum_budgeted" style="@style/BudgetSumLabel" />
+        <TextView android:text="@string/label_sum_vendor" style="@style/BudgetSumLabel" />
+        <TextView android:text="@string/label_sum_spent" style="@style/BudgetSumLabel" />
+    </LinearLayout>
+    <LinearLayout style="@style/BudgetSumValues">
+        <TextView android:id="@+id/sumBudgeted" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+        <TextView android:id="@+id/sumVendor" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+        <TextView android:id="@+id/sumSpent" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+    </LinearLayout>
+    <ImageView android:contentDescription="@string/line_shade" style="@style/LineShade" />
+    <LinearLayout style="@style/OrderBy">
+        <Button android:text="@string/orderby_title" android:onClick="orderbyTitle" style="@style/ButtonOrderby" />
+        <Button android:text="@string/orderby_status" android:onClick="orderbyStatus" style="@style/ButtonOrderby" />
+    </LinearLayout>
+    <ListView android:id="@+id/listBudgets" style="@style/ListViewWeight" />
+    <LinearLayout style="@style/Toolbar">
+        <Button android:text="@string/btn_new_budget" android:onClick="openNewBudgetDialog" style="@style/ButtonAdd" />
+    </LinearLayout>
+    <TextView android:id="@+id/help" android:text="@string/help_budgets" style="@style/PageHelp" />
+</LinearLayout>

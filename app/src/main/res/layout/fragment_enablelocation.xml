@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="co.za.wedwise.Fragment.EnableLlocationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/enable_location_txt">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/map"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable location"
+            android:textSize="35dp"
+            android:id="@+id/enable_location_txt"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/enable_location_txt"
+            android:orientation="vertical"
+            android:gravity="center">
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:text="You'll need to enable your location in order to use App"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/enable_location_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Allow Location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_round_1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

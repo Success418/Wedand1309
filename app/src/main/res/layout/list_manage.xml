@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/FormPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/selctedItem" android:text="@string/dummy" style="@style/FormText" />
+    <LinearLayout style="@style/FormButtons">
+        <Button android:id="@+id/editBtn" android:text="@string/btn_edit" style="@style/FormButton" />
+        <Button android:id="@+id/deleteBtn" android:text="@string/btn_delete" style="@style/FormButton" />
+    </LinearLayout>
+</LinearLayout>

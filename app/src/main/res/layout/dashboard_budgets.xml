@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/DashboardPageTitle">
+        <TextView android:id="@+id/listTitle" android:text="@string/title_dashboard_budgets" style="@style/DashboardTitle" />
+        <Button android:text="@string/btn_refresh" android:onClick="refreshList" style="@style/ButtonRefresh" />
+    </RelativeLayout>
+    <LinearLayout style="@style/BudgetSum">
+        <TextView android:text="@string/label_total_sum_budgeted" style="@style/BudgetSumLabel" />
+        <TextView android:text="@string/label_total_sum_vendor" style="@style/BudgetSumLabel" />
+        <TextView android:text="@string/label_total_sum_spent" style="@style/BudgetSumLabel" />
+    </LinearLayout>
+    <LinearLayout style="@style/BudgetSumValues">
+        <TextView android:id="@+id/sumBudgeted" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+        <TextView android:id="@+id/sumVendor" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+        <TextView android:id="@+id/sumSpent" android:text="@string/hint_budget" style="@style/BudgetSumValue" />
+    </LinearLayout>
+    <ImageView android:contentDescription="@string/line_shade" style="@style/LineShade" />
+    <ListView android:id="@+id/listBudgets" style="@style/ListViewWeight" />
+    <TextView android:id="@+id/help" android:text="@string/help_budgets" style="@style/PageHelp" />
+</LinearLayout>

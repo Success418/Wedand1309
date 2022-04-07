@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "592779283035",
+    "firebase_url": "https://wedwise-panel.firebaseio.com",
+    "project_id": "wedwise-panel",
+    "storage_bucket": "wedwise-panel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592779283035:android:95e47294144d07cc",
+        "android_client_info": {
+          "package_name": "co.za.wedwise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592779283035-453t101h9q6dsggsmcvj80i02pq4dmoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.za.wedwise",
+            "certificate_hash": "27cc9a1a0a32209b02f84b978e2d403f72594cac"
+          }
+        },
+        {
+          "client_id": "592779283035-ct933rdi7nof60730jq95nhlmb26t9n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.za.wedwise",
+            "certificate_hash": "cd774cb62aa073c1e80e6bb3746735277aa5285d"
+          }
+        },
+        {
+          "client_id": "592779283035-pb180rsgib5h2ust302057o4pn3cvq60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPkbATan9kB7DWGXLfFCnaKr9ct8qaBgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592779283035-pb180rsgib5h2ust302057o4pn3cvq60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

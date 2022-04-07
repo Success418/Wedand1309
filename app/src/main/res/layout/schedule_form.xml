@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/newScheduleLayout" style="@style/FormPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@+id/titleEditText" android:hint="@string/hint_title" style="@style/FormTitle" />
+    <EditText android:id="@+id/noteEditText" android:hint="@string/hint_note" style="@style/FormNote" />
+    <LinearLayout style="@style/FormH">
+        <TextView android:text="@string/label_month" style="@style/FormLabelMonth" />
+        <TextView android:text="@string/label_date" style="@style/FormLabelDate" />
+        <TextView android:text="@string/label_year" style="@style/FormLabelYear" />
+    </LinearLayout>
+    <LinearLayout style="@style/FormH">
+        <EditText android:id="@+id/monthEditText" android:hint="@string/hint_month" style="@style/FormValueMonth" />
+        <EditText android:id="@+id/dateEditText" android:hint="@string/hint_date" style="@style/FormValueDate" />
+        <EditText android:id="@+id/yearEditText" android:hint="@string/hint_year" style="@style/FormValueYear" />
+    </LinearLayout>
+    <LinearLayout style="@style/FormButtons">
+        <Button android:id="@+id/formOKBtn" android:text="@string/btn_ok" style="@style/FormButton" />
+        <Button android:id="@+id/formCloseBtn" android:text="@string/btn_cancel" style="@style/FormButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
+        app:elevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rlclose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_cancel"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/close_btn"/>
+                <ImageView
+                    android:id="@+id/imagesound"
+                    android:layout_below="@+id/close_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_playsound"
+                    android:layout_centerHorizontal="true"/>
+                <ImageButton
+                    android:id="@+id/playbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imagesound"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_play"
+                    android:background="@color/transparentt"/>
+                <ImageButton
+                    android:id="@+id/pause_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:layout_below="@+id/imagesound"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_pause"
+                    android:background="@color/transparentt"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagesound"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp">
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:00"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/white"
+                        android:id="@+id/duration_time"
+                        android:layout_centerVertical="true"/>
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekbar"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"/>
+
+                    <customfonts.TextViewSFProDisplayMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="02:00"
+                        android:textSize="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:id="@+id/totaltime"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

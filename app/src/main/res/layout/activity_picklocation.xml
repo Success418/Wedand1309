@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white"
+                android:layout_marginLeft="10dp"/>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Map"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/locationPicker_maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:id="@+id/locationPicker_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/locationPicker_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/locationPicker_space"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_location"
+                android:tint="@color/colorPrimary"/>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progresslatest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round_1"
+            android:backgroundTint="@color/backgroundgray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_searchtext"
+                android:tint="@color/gray"/>
+
+            <customfonts.AutoCompleteTextViewSFProDisplayRegular
+                android:id="@+id/locationPicker_autoCompleteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round_1"
+                android:backgroundTint="@color/backgroundgray"
+                android:hint="Change Location"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_location"
+                android:tint="@color/gray"/>
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:id="@+id/locationPicker_currentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Add your Location"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+        </LinearLayout>
+
+        <customfonts.Button_SF_Pro_Display_Medium
+            android:visibility="visible"
+            android:id="@+id/locationPicker_destinationButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_round_1"
+            android:text="Add Location"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

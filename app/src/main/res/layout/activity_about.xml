@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        app:contentInsetLeft="0dp"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_white">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_back" />
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="AboutUs"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/lin_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/icon_splash"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="10dp"/>
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/appname"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_on_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lin_lay"
+            android:layout_marginTop="-40dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/support"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"/>
+
+                    <ImageView
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/gmail"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"/>
+
+                    <ImageView
+                        android:id="@+id/web"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/safari"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <customfonts.TextViewSFProDisplayMedium
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_below="@+id/rel_lay_header"
+        android:textSize="18dp"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="10dp"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/about"
+        android:layout_marginLeft="10dp"
+        android:background="@color/orange"
+        android:layout_marginBottom="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/line">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/nointernet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="178dp"
+            android:text="No Internet Found yet."
+            android:textColor="@color/gray"
+            android:textSize="13dp"
+            android:visibility="visible"
+            android:id="@+id/textViewSFProDisplayMedium2" />
+
+        <ImageView
+            android:id="@+id/sleep"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/textViewSFProDisplayMedium2"
+            android:layout_alignEnd="@+id/textViewSFProDisplayMedium2"
+            android:src="@drawable/notfound" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

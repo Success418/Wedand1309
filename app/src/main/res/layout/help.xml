@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/listTitle" android:text="@string/title_help" style="@style/PageTitle" />
+    <ScrollView style="@style/LayoutV">
+        <LinearLayout style="@style/LayoutMatchV">
+            <TextView android:text="@string/help_title_item_manage" style="@style/HelpTitle" />
+            <TextView android:text="@string/help_desc_item_manage" style="@style/HelpDesc" />
+            <TextView android:text="@string/help_title_dashboard_use" style="@style/HelpTitle" />
+            <TextView android:text="@string/help_desc_dashboard_use" style="@style/HelpDesc" />
+            <TextView android:text="@string/help_title_info_manage" style="@style/HelpTitle" />
+            <TextView android:text="@string/help_desc_info_manage" style="@style/HelpDesc" />
+            <TextView android:text="@string/help_title_vendors_actions" style="@style/HelpTitle" />
+            <TextView android:text="@string/help_desc_vendors_actions" style="@style/HelpDesc" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/ListCheckBox" />
+
+    <LinearLayout style="@style/ListItemWeightV">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/ListItemTitle"
+            android:text="@string/dummy" />
+
+        <TextView
+            android:id="@+id/note"
+            style="@style/ListItemNote"
+            android:text="@string/dummy" />
+
+        <LinearLayout style="@style/ListItemBudgets">
+
+            <TextView
+                android:id="@+id/budgeted"
+                style="@style/ListItemBudget"
+                android:text="@string/dummy" />
+
+            <TextView
+                android:id="@+id/vendor"
+                style="@style/ListItemBudget"
+                android:text="@string/dummy" />
+
+            <TextView
+                android:id="@+id/spent"
+                style="@style/ListItemBudget"
+                android:text="@string/dummy" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

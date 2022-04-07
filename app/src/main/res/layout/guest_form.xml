@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newGuestLayout"
+    style="@style/FormPage">
+
+    <TextView
+        style="@style/FormText"
+        android:text="@string/label_guestname" />
+
+    <EditText
+        android:id="@+id/firstnameEditText"
+
+        style="@style/FormTitle"
+        android:hint="@string/hint_firstname" />
+
+    <EditText
+        android:id="@+id/middlenameEditText"
+        style="@style/FormTitle"
+        android:hint="@string/hint_middlename"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/lastnameEditText"
+        style="@style/FormTitle"
+        android:hint="@string/hint_lastname" />
+
+    <TextView
+        style="@style/FormText"
+        android:text="@string/label_side" />
+
+    <RadioGroup
+        android:id="@+id/sideRadioGroup"
+        style="@style/FormRadioGroup">
+
+        <RadioButton
+            android:id="@+id/radioSideBride"
+            style="@style/FormRadioButton"
+            android:text="@string/label_side_bride" />
+
+        <RadioButton
+            android:id="@+id/radioSideGroom"
+            style="@style/FormRadioButton"
+            android:text="@string/label_side_groom" />
+
+        <RadioButton
+            android:id="@+id/radioSideChild"
+            style="@style/FormRadioButton"
+            android:text="@string/label_side_child"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sideValue"
+        style="@style/FormHidden"
+        android:text="@string/label_side_bride" />
+
+    <TextView
+        style="@style/FormText"
+        android:text="@string/label_rsvp" />
+
+    <TextView
+        style="@style/FormSubLabel"
+        android:text="@string/label_invitessent" />
+
+    <RadioGroup
+        android:id="@+id/invitesRadioGroup"
+        style="@style/FormRadioGroup">
+
+        <RadioButton
+            android:id="@+id/radioInvitesYes"
+            style="@style/FormRadioButton"
+            android:text="@string/label_yes" />
+
+        <RadioButton
+            android:id="@+id/radioInvitesNo"
+            style="@style/FormRadioButton"
+            android:text="@string/label_no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/invitesValue"
+        style="@style/FormHidden"
+        android:text="@string/label_no" />
+
+    <TextView
+        style="@style/FormSubLabel"
+        android:text="@string/label_attending" />
+
+    <RadioGroup
+        android:id="@+id/attendingRadioGroup"
+        style="@style/FormRadioGroup">
+
+        <RadioButton
+            android:id="@+id/radioAttendingYes"
+            style="@style/FormRadioButton"
+            android:text="@string/label_yes" />
+
+        <RadioButton
+            android:id="@+id/radioAttendingNo"
+            style="@style/FormRadioButton"
+            android:text="@string/label_no" />
+
+        <RadioButton
+            android:id="@+id/radioAttendingUndecided"
+            style="@style/FormRadioButton"
+            android:text="@string/label_undecided" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/attendingValue"
+        style="@style/FormHidden"
+        android:text="@string/label_undecided" />
+
+    <LinearLayout style="@style/FormButtons">
+
+        <Button
+            android:id="@+id/formOKBtn"
+            style="@style/FormButton"
+            android:text="@string/btn_ok" />
+
+        <Button
+            android:id="@+id/formCloseBtn"
+            style="@style/FormButton"
+            android:text="@string/btn_cancel" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavigationDrawerStyle">
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontWeight">100</item>
+
+        <!-- text size in menu-->
+
+        <!--&lt;!&ndash; item size in menu&ndash;&gt;-->
+        <!--<item name="android:listPreferredItemHeightSmall">40dp</item>-->
+        <!--<item name="listPreferredItemHeightSmall">40dp</item>-->
+
+        <!--&lt;!&ndash; item padding left in menu&ndash;&gt;-->
+        <!--<item name="android:listPreferredItemPaddingLeft">8dp</item>-->
+        <!--<item name="listPreferredItemPaddingLeft">8dp</item>-->
+
+        <!--&lt;!&ndash; item padding right in menu&ndash;&gt;-->
+        <!--<item name="android:listPreferredItemPaddingRight">8dp</item>-->
+        <!--<item name="listPreferredItemPaddingRight">8dp</item>-->
+    </style>
+
+
+</resources>

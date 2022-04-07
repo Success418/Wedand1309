@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <!--<dimen name="nav_header_height">176dp</dimen>-->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="textsize_xlarge">20.0sp</dimen>
+    <dimen name="textsize_large">16.0sp</dimen>
+    <dimen name="textsize_normal">14.0sp</dimen>
+    <dimen name="textsize_small">12.0sp</dimen>
+    <dimen name="textsize_tiny">11.0sp</dimen>
+    <dimen name="textsize_xtiny">9.0sp</dimen>
+    <dimen name="margin_xxlarge">96.0dip</dimen>
+    <dimen name="margin_xlarge">64.0dip</dimen>
+    <dimen name="margin_large">48.0dip</dimen>
+    <dimen name="margin_medium">32.0dip</dimen>
+    <dimen name="margin_normal">16.0dip</dimen>
+    <dimen name="margin_small">8.0dip</dimen>
+    <dimen name="margin_tiny">4.0dip</dimen>
+    <dimen name="margin_xtiny">2.0dip</dimen>
+    <dimen name="padding_xxlarge">96.0dip</dimen>
+    <dimen name="padding_xlarge">64.0dip</dimen>
+    <dimen name="padding_large">48.0dip</dimen>
+    <dimen name="padding_medium">32.0dip</dimen>
+    <dimen name="padding_normal">16.0dip</dimen>
+    <dimen name="padding_small">8.0dip</dimen>
+    <dimen name="padding_tiny">4.0dip</dimen>
+    <dimen name="padding_xtiny">2.0dip</dimen>
+    <dimen name="layout_xxlarge">96.0dip</dimen>
+    <dimen name="layout_xlarge">64.0dip</dimen>
+    <dimen name="layout_large">48.0dip</dimen>
+    <dimen name="layout_medium">32.0dip</dimen>
+    <dimen name="layout_normal">16.0dip</dimen>
+    <dimen name="layout_small">8.0dip</dimen>
+    <dimen name="layout_tiny">4.0dip</dimen>
+    <dimen name="layout_xtiny">2.0dip</dimen>
+    <dimen name="form_normal">280.0dip</dimen>
+    <dimen name="form_label_large">160.0dip</dimen>
+    <dimen name="form_value_large">100.0dip</dimen>
+    <dimen name="intro_mark">24.0dip</dimen>
+    <dimen name="intro_ribbon">100.0dip</dimen>
+    <dimen name="margin_top_introtitle">64.0dip</dimen>
+    <dimen name="margin_bottom_introtitle">16.0dip</dimen>
+</resources>

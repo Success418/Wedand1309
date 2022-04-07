@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.za.wedwise.Activity.BlockActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        app:contentInsetLeft="0dp"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_white">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:src="@drawable/warning"/>
+
+    <customfonts.TextViewSFProDisplayMedium
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:text="BLOCKED!"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <customfonts.TextViewSFProDisplayRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/block"
+        android:text="Please Contact Admin!"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <customfonts.Button_SF_Pro_Display_Medium
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_round_1"
+        android:text="Logout"/>
+
+</RelativeLayout>

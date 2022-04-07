@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true">
+
+
+    <ImageView
+        android:id="@+id/single_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_cancel"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:id="@+id/close_gallery"
+        android:scaleType="fitXY"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"
+        android:visibility="gone"/>
+
+    <customfonts.Button_SF_Pro_Display_Medium
+        android:id="@+id/savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Download"
+        android:background="@drawable/button_round_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentBottom="true"/>
+
+    <customfonts.Button_SF_Pro_Display_Medium
+        android:id="@+id/savebtn2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Download"
+        android:background="@drawable/button_round_1"
+        android:backgroundTint="@color/gray"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_share"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:id="@+id/sharebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/button_round_1"
+        android:backgroundTint="@color/gray"/>
+
+</RelativeLayout>

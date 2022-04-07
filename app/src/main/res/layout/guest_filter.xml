@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newGuestLayout"
+    android:layout_width="@dimen/form_normal"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_pagetitle">
+
+        <TextView
+            android:id="@+id/listTitle"
+            style="@style/PageTitle"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Filter"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="280dp"
+            android:src="@drawable/ic_icon"
+            android:tint="@color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FormText"
+            android:text="RSVP" />
+
+        <LinearLayout style="@style/FormButtons">
+
+            <Button
+                android:id="@+id/btn_rsvp_yes"
+                style="@style/FormButton"
+                android:text="Yes" />
+
+            <Button
+                android:id="@+id/btn_rsvp_no"
+                style="@style/FormButton"
+                android:background="@color/com_facebook_blue"
+                android:text="No" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/FormText"
+            android:text="Attending" />
+
+        <LinearLayout style="@style/FormButtons">
+
+            <Button
+                android:id="@+id/btn_attending_yes"
+                style="@style/FormButton"
+                android:background="@color/com_facebook_blue"
+                android:text="Yes" />
+
+            <Button
+                android:id="@+id/btn_attending_no"
+                style="@style/FormButton"
+                android:text="No" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormButtons"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/formOKBtn"
+            style="@style/FormButton"
+            android:text="Show All" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FormButtons"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            style="@style/FormButton"
+            android:background="@color/com_facebook_blue"
+            android:text="Apply Filter" />
+
+    </LinearLayout>
+</LinearLayout>

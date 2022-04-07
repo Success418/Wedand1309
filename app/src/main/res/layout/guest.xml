@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ListItemWeightV">
+        <TextView android:id="@+id/name"
+            android:text="@string/dummy"
+            style="@style/ListItemTitle" />
+    </LinearLayout>
+    <LinearLayout style="@style/ListItemRSVP">
+        <TextView android:id="@+id/side"
+            android:text="@string/dummy"
+            style="@style/ListItemGuestsSide"
+            android:layout_marginEnd="17dp"/>
+        <TextView android:id="@+id/invites"
+            android:text="@string/dummy"
+            style="@style/ListItemGuestsInvites"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/ivinvites"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:padding="2dp"
+            android:layout_marginEnd="33dp"
+            />
+        <ImageView
+            android:id="@+id/ivattending"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:padding="2dp"
+            android:layout_marginEnd="16dp"
+            />
+        <TextView android:id="@+id/attending"
+            android:text="@string/dummy"
+            style="@style/ListItemGuestsAttending"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

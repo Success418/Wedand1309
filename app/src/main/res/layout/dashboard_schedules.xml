@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/DashboardPageTitle">
+        <TextView android:id="@+id/listTitle" android:text="@string/title_dashboard_schedules" style="@style/DashboardTitle" />
+        <Button android:text="@string/btn_refresh" android:onClick="refreshList" style="@style/ButtonRefresh" />
+    </RelativeLayout>
+    <LinearLayout style="@style/WeddingDateInfo">
+        <TextView android:id="@+id/dday" android:text="@string/dummy" style="@style/WeddingDday" />
+        <TextView android:id="@+id/info" android:text="@string/dummy" style="@style/WeddingDate" />
+        <TextView android:id="@+id/noInfo" android:text="@string/dummy" style="@style/WeddingNoInfo" />
+        <Button android:id="@+id/btnNewInfo" android:text="@string/btn_addinfo" android:onClick="openNewInfoDialog" style="@style/ButtonNewInfo" />
+    </LinearLayout>
+    <ImageView android:contentDescription="@string/line_shade" style="@style/LineShade" />
+    <LinearLayout style="@style/Filter">
+        <Button android:text="@string/filter_fromthisday" android:onClick="filterFromthisday" style="@style/ButtonFilter" />
+        <Button android:text="@string/filter_beforetoday" android:onClick="filterBeforetoday" style="@style/ButtonFilter" />
+        <Button android:text="@string/filter_all" android:onClick="filterAll" style="@style/ButtonFilter" />
+    </LinearLayout>
+    <ListView android:id="@+id/listSchedules" style="@style/ListViewWeight" />
+    <TextView android:id="@+id/help" android:text="@string/help_schedules" style="@style/PageHelp" />
+</LinearLayout>

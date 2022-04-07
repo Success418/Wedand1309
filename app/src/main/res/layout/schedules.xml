@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/SubPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/listTitle" android:text="@string/title_schedule" style="@style/TopicTitle" />
+    <LinearLayout style="@style/ListTabs">
+        <Button android:text="@string/tab_task" android:onClick="gotoTasks" style="@style/ListTab" />
+        <Button android:text="@string/tab_checklist" android:onClick="gotoItems" style="@style/ListTab" />
+        <Button android:text="@string/tab_budget" android:onClick="gotoBudgets" style="@style/ListTab" />
+        <Button android:text="@string/tab_schedule" style="@style/ListTabOn" />
+        <Button android:text="@string/tab_vendor" android:onClick="gotoVendors" style="@style/ListTab" />
+    </LinearLayout>
+    <LinearLayout style="@style/OrderBy">
+        <Button android:text="@string/orderby_date" android:onClick="orderbyDate" style="@style/ButtonOrderby" />
+        <Button android:text="@string/orderby_title" android:onClick="orderbyTitle" style="@style/ButtonOrderby" />
+        <Button android:text="@string/orderby_status" android:onClick="orderbyStatus" style="@style/ButtonOrderby" />
+    </LinearLayout>
+    <ListView android:id="@+id/listSchedules" style="@style/ListViewWeight" />
+    <LinearLayout style="@style/Toolbar">
+        <Button android:text="@string/btn_new_schedule" android:onClick="openNewScheduleDialog" style="@style/ButtonAdd" />
+    </LinearLayout>
+    <TextView android:id="@+id/help" android:text="@string/help_schedules" style="@style/PageHelp" />
+</LinearLayout>
